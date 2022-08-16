@@ -1,0 +1,59 @@
+body, ul, li, h1, h2, h3, h4, p, blockquote, a, img, div{
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+   text-decoration: none;
+   color: white;
+
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.container{
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.container-2{
+    box-sizing: border-box;
+    max-width: 1600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn{
+    padding: 16px 32px;
+    color: var(--color-p5);
+    background-color: var(--color-p1);
+    border-radius: 6px;
+    display: inline-block;
+    max-width: max-content;
+    
+}
+
+.header-bg{
+    background-color: var(--color-12);
+}
+
+@media(max-width:600px){
+    .btn{
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}

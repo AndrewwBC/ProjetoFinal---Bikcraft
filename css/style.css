@@ -1,0 +1,10 @@
+/* Tipografia */
+@import url('./utilidades/fonts.css');
+@import url('./utilidades/colors.css');
+@import url('./global.css');
+@import url('./home/header.css');
+@import url('./home/intro.css');
+@import url('./home/tecnology.css');
+@import url('./home/partners.css');
+@import url('./home/testimony.css');
+@import url('./home/gallery.css');
