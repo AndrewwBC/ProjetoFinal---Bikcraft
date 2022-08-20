@@ -94,6 +94,9 @@
     .tecnology-text{
         padding-top: 24px;
     }
+    .tecnology-text h1{
+        font-size: 32px;
+    }
 
     .tecnology-bg{
         background-color: var(--color-11);
