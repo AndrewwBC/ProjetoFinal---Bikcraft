@@ -1,7 +1,9 @@
-/* Tipografia */
+/* GENERAL */
 @import url('./utilidades/fonts.css');
 @import url('./utilidades/colors.css');
 @import url('./global.css');
+
+/* HOME */
 @import url('./home/header.css');
 @import url('./home/intro.css');
 @import url('./home/tecnology.css');
@@ -10,3 +12,13 @@
 @import url('./home/gallery.css');
 @import url('./home/insurance.css');
 @import url('./home/footer.css');
+/* HOME END CSS */
+
+
+/* BIKES */
+
+@import url("./bikes/section.css");
+
+/* INNER BIKES */
+
+@import url("./inner-bikes/positions.css");
