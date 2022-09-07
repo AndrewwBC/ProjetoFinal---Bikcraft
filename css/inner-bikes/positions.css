@@ -89,3 +89,57 @@
 .inner-bikes-datasheet li:last-child{
     border-bottom: none;
 }
+
+/* GALLERY */
+
+.inner-gallery{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 120px;
+}
+
+.inner-h1{
+    margin-top: 90px;
+}
+
+.inner-gallery img{
+    border-radius: 6px;
+}
+
+/* INNER INSURANCE */
+
+.inner-insurance-bg{
+    background-color: var(--color-11);
+    box-shadow: inset 0px -120px 0px 0px black, inset 0px 120px 0px 0px white;
+}
+
+.inner-insurance-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.inner-insurance-text h1{
+    margin-bottom: 32px;
+}
+
+.inner-insurance-text p{
+    margin-bottom: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
