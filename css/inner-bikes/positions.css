@@ -104,6 +104,40 @@
     margin-top: 90px;
 }
 
+.inner-gallery h2{
+    margin-top: 12px;
+    margin-bottom: 6px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+}
+
+.inner-gallery  h2::before{
+    content: " ";
+    width: 12px;
+    height: 8px;
+    background-color: var(--color-p1);
+    position: absolute;
+    left: -20px;
+}
+.inner-gallery  h2:hover{
+    margin-left: 32px;
+    transition: 0.3s;
+}
+.inner-gallery  h2:hover::before{
+   width: 16px;
+   transition: 0.3s;
+}
+
+.inner-gallery  h2{
+    margin-left: 20px;
+}
+
+.inner-gallery  p{
+    margin-left: 20px;
+}
+
 .inner-gallery img{
     border-radius: 6px;
 }

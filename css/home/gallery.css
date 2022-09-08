@@ -16,7 +16,7 @@
     margin-bottom: 40px;
 }
 
-.gallery-bg, .inner-gallery h2{
+.gallery-bg h2{
     margin-top: 12px;
     margin-bottom: 6px;
     position: relative;
@@ -25,7 +25,7 @@
     
 }
 
-.gallery-bg, .inner-gallery  h2::before{
+.gallery-bg  h2::before{
     content: " ";
     width: 12px;
     height: 8px;
@@ -33,20 +33,20 @@
     position: absolute;
     left: -20px;
 }
-.gallery-bg, .inner-gallery  h2:hover{
+.gallery-bg  h2:hover{
     margin-left: 32px;
     transition: 0.3s;
 }
-.gallery-bg, .inner-gallery  h2:hover::before{
+.gallery-bg  h2:hover::before{
    width: 16px;
    transition: 0.3s;
 }
 
-.gallery-bg, .inner-gallery  h2{
+.gallery-bg  h2{
     margin-left: 20px;
 }
 
-.gallery-bg, .inner-gallery  p{
+.gallery-bg  p{
     margin-left: 20px;
 }
 
