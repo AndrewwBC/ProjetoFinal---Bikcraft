@@ -188,6 +188,11 @@
         margin-bottom: 10px;
     }
     
+    .bordaAtiva{
+        border-bottom: 10px solid red !important;;
+        
+    }
+
     .bikes-text p{
         margin-bottom: 16px;
         font-size: 14px;

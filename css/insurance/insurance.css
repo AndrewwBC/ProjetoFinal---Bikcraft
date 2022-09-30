@@ -1,0 +1,68 @@
+.insurance-advantages{
+    background-color: var(--color-12);
+    color: white;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.insurance-advantages h1{
+    margin-bottom: 120px;
+}
+
+.insurance-adv-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.insurance-adv-grid div{
+    display: grid;
+    gap: 18px;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.flex-row p{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.flex-row p::before {
+   content: ' ';
+   width: 12px;
+   height: 8px;
+   background-color: var(--color-p1);
+   position: absolute;
+   left: -16px;
+   border-radius: 2px;
+
+}
+.questions-cont > div:nth-child(odd){
+    background-color: var(--color-2);
+    border-radius: 4px;
+}
+
+
+.question-section{
+    padding-bottom: 120px;
+}
+
+.question-section h1 {
+    margin-bottom: 60px;
+
+}
+
+.questions-1{
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+}
