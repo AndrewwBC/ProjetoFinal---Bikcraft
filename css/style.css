@@ -25,4 +25,8 @@
 
 /* INSURANCE */
 
-@import url("insurance/insurance.css");
+@import url("./insurance/insurance.css");
+
+/* CONTACT */
+
+@import url("./contact/contact.css");
