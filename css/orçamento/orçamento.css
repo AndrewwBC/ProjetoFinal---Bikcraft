@@ -1,0 +1,72 @@
+.little-text-form{
+    margin-top: 24px;
+}
+
+.orç-inputs{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px 14px 10px;
+    background-color: var(--color-10);
+    border-radius: 4px;
+}
+
+.orç-inputs-bikes{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px 14px 10px;
+    background-color: var(--color-10);
+    border-radius: 4px;
+}
+
+.nimbus-orç-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.orç-row{
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.orç-row-top{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.little-text-orç{
+    margin-top: 26px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.little-text-orç::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-p1);
+    position: absolute;
+    left: -16px;
+    border-radius: 2px;
+}
+
+.inputs-orç-bike{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nimbus-orç{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}

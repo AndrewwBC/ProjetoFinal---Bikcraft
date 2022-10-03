@@ -19,7 +19,7 @@
     background-color: var(--color-12);
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
-    padding: 60px 60px 60px 40px;
+    padding: 24px 60px 60px 40px;
 }
 
 .contact-form-local > p{
@@ -43,12 +43,33 @@
 .contact-form{
     display: grid;
     background-color: white;
-    padding: 60px 60px 60px 60px;
+    padding: 24px 60px 48px 60px;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
 }
 
+
 /* FORMULARY */
+
+.little-text-form{
+    margin-bottom: 16px;
+    margin-top: 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+}
+
+.little-text-form::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-p1);
+    position: absolute;
+    left: -16px;
+    border-radius: 2px;
+
+}
 
 .contact-form-flex-col{
     display: flex;
@@ -64,17 +85,33 @@
 
 .contact-form label{
     margin-bottom: 6px;
+    margin-top: 12px;
 }
 
 .contact-form input {
-    margin-bottom: 24px;
+    margin-bottom: 12px;
+    
 }
 
-.contact-form input, textarea{
+.contact-form input, textarea, select{
     background-color: var(--color-2);
     border: none;
     padding: 16px;
     border-radius: 4px;
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 24px;
+    
+}
+
+.contact-form a{
+    margin-top: 20px;
+}
+
+.contact-form a:hover{
+    background-color: var(--color-p2);
 }
 
 .email{
@@ -103,6 +140,22 @@
     padding: 32px 60px 32px 32px;
 }
 
+.maps-address h2{
+    position: relative;
+    margin-left: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.maps-address h2::before{
+    content: '';
+    width: 12px;
+    height: 8px;
+    background-color: var(--color-p1);
+    position: absolute;
+    left: -20px;
+}
+
 .contact-maps{
     background-color: var(--color-0);
 }
@@ -120,4 +173,23 @@
 
 .maps-time{
     margin-top: 32px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 12px;
+}
+
+@media(max-width:900px){
+    .maps-bg,
+    .contact-form,
+    .contact-form-grid,
+    .contact-form-bg,
+    .contact-maps-bg{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form-local-grid{
+        grid-template-columns: 1fr;
+    }
+    
 }

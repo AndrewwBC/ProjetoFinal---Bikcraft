@@ -51,3 +51,9 @@
 .font-1-xs{
     font: 600 12px/16px 'Poppins' ;
 }
+
+@media(max-width:700px){
+    .font-1-xxl{
+        font: 600 48px/72px "Poppins";
+    }
+}

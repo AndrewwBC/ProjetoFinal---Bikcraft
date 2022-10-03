@@ -67,3 +67,12 @@ img{
         font-size: 14px;
     }
 }
+
+footer a:hover{
+    color: var(--color-0);
+}
+
+input {
+    max-width: inherit;
+    display: block;
+}

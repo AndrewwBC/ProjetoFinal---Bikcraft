@@ -21,6 +21,20 @@
     gap: 18px;
 }
 
+.silver-gold-list li{
+    position: relative;
+}
+
+.silver-gold-list li::before{
+    content: " ";
+    width: 13px;
+    height: 9px;
+    background-image: url("/img/icones/lista.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -18px;
+}
+
 .flex-row{
     display: flex;
     flex-direction: row;
@@ -44,7 +58,7 @@
    border-radius: 2px;
 
 }
-.questions-cont > div:nth-child(odd){
+.questions-cont > div:nth-child(even){
     background-color: var(--color-2);
     border-radius: 4px;
 }
@@ -56,6 +70,7 @@
 
 .question-section h1 {
     margin-bottom: 60px;
+    margin-top: 60px;
 
 }
 
@@ -65,4 +80,17 @@
     flex-direction: column;
     justify-content: space-between;
     justify-items: center;
+}
+
+@media(max-width:700px){
+    .insurance-adv-grid{
+        grid-template-columns: 1fr;
+    }
+    .insurance-advantages{
+        padding: 12px;
+    }
+
+    .insurance-advantages h1{
+        margin-bottom: 24px;
+    }
 }
