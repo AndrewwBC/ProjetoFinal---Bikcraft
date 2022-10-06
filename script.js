@@ -1,4 +1,4 @@
-/*const bicicletas = document.getElementById('Bicicletas');
+const bicicletas = document.getElementById('Bicicletas');
 const contato = document.getElementById('Contato');
 const seguro = document.getElementById('Seguro');
 
@@ -9,7 +9,7 @@ if(window.location.href === bicicletas.href) {
 
 else if(window.location.href === 'http://127.0.0.1:5500/inner-bikes.html') {
     bicicletas.classList.add('bordaAtiva');
-} */
+} 
 
 let acumulador = 0;
 
