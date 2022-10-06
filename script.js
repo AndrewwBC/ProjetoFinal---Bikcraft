@@ -15,8 +15,6 @@ const container = document.getElementsByClassName('container-perguntas');
 const perguntas = document.getElementsByClassName('container-content');
 const button = document.getElementById('questions-2-btn');
 
-console.log(container);
-console.log(perguntas);
 
 for(let i=0; i<=container.length; i++){
     
