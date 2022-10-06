@@ -11,65 +11,38 @@ else if(window.location.href === 'http://127.0.0.1:5500/inner-bikes.html') {
     bicicletas.classList.add('bordaAtiva');
 } 
 
-let acumulador = 0;
+const container = document.getElementsByClassName('container-perguntas');
+const perguntas = document.getElementsByClassName('container-content');
+const button = document.getElementById('questions-2-btn');
 
-let isOpen = false;
-const texto = '<p class="font-2-s">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>'
+console.log(container);
+console.log(perguntas);
 
-const botao = document.querySelectorAll('button');
-console.log(botao);
-
-let  a = 1;
-
-function contar(){
-    a = a + 1;
-    console.log('ESTE É O VALOR DE A: ' + a);
-    if(a === 2){
-        a = 1;
-    }
-}
-
-function ativar(recebe){
-    if(a === 2){
-        isOpen = !isOpen;
-       }
-
-    const recebido = document.getElementById('texto-add-' + `${recebe}` );
-
-    const formatar = parseInt(recebe);
+for(let i=0; i<=container.length; i++){
     
-    let i;
-    let somatorioLoop = 0;
+    container[i].addEventListener('click', () => {
+  
+    
+    if(perguntas[i].classList.contains('d-none') === true){
+        perguntas[i].classList.remove('d-none');
+        button.classList.toggle('rotation');
+        
+    }
+    else{
+        perguntas[i].classList.add('d-none');
+        button.classList.toggle('rotation');
+        
+    }
 
-    //  Loop para retirar o texto de todos que nao são clicados.
-    for(i=1; i<=7; i++){
-        if(i != formatar) {
-            let recebidoLoop = document.getElementById('texto-add-' + `${i}` );
-            recebidoLoop.innerHTML = null;
-            console.log(recebidoLoop);
-            
-            somatorioLoop = somatorioLoop + i;
-            console.log('Somatorio loop ' + somatorioLoop);
+    for(let j=0; j<=container.length; j++ ){
+        if(j != i){
+            if(perguntas[j].classList.contains('d-none') === false){
+                perguntas[j].classList.add('d-none');
+            }
         }
     }
-    
-    if(isOpen === false){ 
-        recebido.innerHTML =  recebido.innerHTML + texto;  
-        console.log('IF');
-        a = 2;
-     }
-    else if(isOpen === true){
-        isOpen = !isOpen;
-        recebido.innerHTML = null;
-        console.log('else if');
-        if(a === 2){
-            recebido.innerHTML =  recebido.innerHTML + texto;  
-            a = 1;
-        }
-    }
+
+    });
 }
+ 
 
-//botao.forEach(addEventListener('click', contar));
-
-
-// orçamento 

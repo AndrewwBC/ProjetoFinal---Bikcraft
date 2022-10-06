@@ -76,3 +76,15 @@ input {
     max-width: inherit;
     display: block;
 }
+
+.d-none{
+   display: none;
+}
+
+.rotation{
+    transform: rotate( -180deg );
+}
+
+.rotation-out{
+    transform: rotate( +180deg );
+}
