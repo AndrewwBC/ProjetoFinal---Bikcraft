@@ -35,4 +35,8 @@
 
 @import url("./orçamento/orçamento.css");
 
-@import url("./terms/terms.css")
+@import url("./terms/terms.css");
+
+.bordaAtiva{
+    border-bottom: 2px solid white !important;
+}

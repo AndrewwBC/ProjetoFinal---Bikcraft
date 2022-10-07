@@ -1,11 +1,8 @@
-// Script para a borda na NAV do header
-const bicicletas = document.getElementById('Bicicletas');
+const seguro = document.getElementById('Seguros');
 
-if(window.location.href === 'http://127.0.0.1:5500/bikes.html' || 'http://127.0.0.1:5500/inner-bikes.html') {
-    bicicletas.classList.add('bordaAtiva');
+if(window.location.href === 'http://127.0.0.1:5500/seguros.html') {
+    seguro.classList.add('bordaAtiva');
 } 
-
-// Script para a página seguros
 
 const container = document.getElementsByClassName('container-perguntas');
 const perguntas = document.getElementsByClassName('container-content');
@@ -34,5 +31,3 @@ for(let i=0; i<=container.length; i++){
 
     });
 }
- 
-

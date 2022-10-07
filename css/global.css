@@ -85,6 +85,3 @@ input {
     transform: rotate( -180deg );
 }
 
-.rotation-out{
-    transform: rotate( +180deg );
-}
