@@ -7,6 +7,23 @@ const textNimbus =  document.getElementById('text-nimbus');
 const textMagic =  document.getElementById('text-magic');
 const textNebula =  document.getElementById('text-nebula');
 
+const textNimbusTitle =  document.getElementById('text-nimbus-title');
+const textMagicTitle =  document.getElementById('text-magic-title');
+const textNebulaTitle =  document.getElementById('text-nebula-title');
+
+idUrl.forEach((item) => {
+    const itemID = document.getElementById(item);
+    containerGallery.prepend(itemID);
+
+    if(itemID.id === 'first')
+        textNimbusTitle.classList.add('display-block');
+         else if(itemID.id === 'second')
+          textMagicTitle.classList.add('display-block');
+           else if(itemID.id === 'third')
+            textNebulaTitle.classList.add('display-block');
+     
+});
+
 idUrl.forEach((item) => {
     const itemID = document.getElementById(item);
     containerGallery.prepend(itemID);
@@ -29,6 +46,7 @@ imagens.forEach((item) => {
             textMagic.classList.add('display-block');
             textNimbus.classList.remove('display-block');
             textNebula.classList.remove('display-block');
+            
         }
           else if(item.id === 'first'){
             textNimbus.classList.add('display-block');
@@ -40,6 +58,24 @@ imagens.forEach((item) => {
               textNimbus.classList.remove('display-block');
               textMagic.classList.remove('display-block');
             }
+            if(item.id === 'first') {
+                textNimbusTitle.classList.add('display-block');
+                textMagicTitle.classList.remove('display-block');
+                textNebulaTitle.classList.remove('display-block');
+            }
+            else if(item.id === 'second') {
+                textMagicTitle.classList.add('display-block');
+                textNimbusTitle.classList.remove('display-block');
+                textNebulaTitle.classList.remove('display-block');
+            }
+              
+               
+              else if(item.id === 'third') {
+                textNebulaTitle.classList.add('display-block');
+                textMagicTitle.classList.remove('display-block');
+                textNimbusTitle.classList.remove('display-block');
+            }
+                
         })
 });
 
