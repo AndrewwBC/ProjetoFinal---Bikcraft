@@ -21,14 +21,14 @@
                 <ul class="menu font-1-m" aria-label="first">
                     <li><a href="bikes.html">Bicicletas</a></li>
                     <li><a href="seguros.html">Seguros</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a id="Contatos" href="contato.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
      </header>
      <!--HEADER END-->
       
-     <article class="contact-bg">
+     <article class="contact-bg orç-bg">
          <div class="container">
             <p class="container font-2-l-b color-5">respostas em até 24h</p>
             <h1 class="container font-1-xxl color-0">nosso contato<span class="color-p1">.</span></h1>
@@ -39,62 +39,144 @@
                     <p class="little-text-orç font-1-xs color-2">BIKCRAFT OU SEGURO?</p>
                     <div class="contact-form-grid">
                         <div class="orç-inputs">
-                            <input type="radio" name="plan-select" id="bike-select">
+                            <input id="bikcraft-input" type="radio" name="plan-select" value="bikcraft">
                             <label for="plan-select">Bikcraft</label>
                         </div> 
                         <div class="orç-inputs">
-                            <input type="radio" name="plan-select" id="bike-select">
+                            <input id="ins-input" type="radio" name="plan-select" value="seguro">
                             <label for="plan-select">Seguro</label>
                         </div> 
                     
                       </div>
+                      <!--SEGUROS DIV APARECER-->
+
+
+                      <div id="hidePlan" class="d-none">
+                        <p class="little-text-orç font-1-xs color-2">ESCOLHA O PLANO:</p>
+                        <div class="escolha-container">
+
+                        <div class="escolha-nome-preço">
+                            <div class="escolha-input">
+                                <input type="radio" name="choice-bike" value="prata" id="prata">
+                                <label for="nimbus" class="font-2-m">PRATA</label>
+                            </div>
+                            <div class="escolha-preço font-2-m">
+                                <p>R$ 2499</p>
+                            </div>
+                        </div>
+                        
+                      </div>
+                      <div class="escolha-container">
+
+                        <div class="escolha-nome-preço">
+                            <div class="escolha-input">
+                                <input type="radio" name="choice-bike" value="ouro" id="ouro">
+                                <label for="nimbus" class="font-2-m">OURO</label>
+                            </div>
+                            <div class="escolha-preço font-2-m">
+                                <p>R$ 2499</p>
+                            </div>
+                        </div>
+                        
+                      </div>
+                        
+                        
+                      </div>
+                      <!--SEGUROS DIV APARECER-->
+
+
+                      <div id="hide" class="d-none">
                       <p class="little-text-orç font-1-xs color-2">ESCOLHA A SUA:</p>
-                    <div class="inputs-orç-bike">
-                      <div class="orç-inputs-bikes">
-                        <div class="orç-row-top">
-                            <div class="orç-row">
-                                <input type="radio" name="bike-select" id="bike-select">
-                                <label for="bike-select">Nimbus Stark</label>
+                      <!--CONTAINERS DE CADA BIKE-->
+                      <div class="escolha-container">
+
+                        <div class="escolha-nome-preço">
+                            <div class="escolha-input">
+                                <input type="radio" name="choice-bike" id="nimbus">
+                                <label for="nimbus" class="font-2-m">Nimbus Stark</label>
+                            </div>
+                            <div class="escolha-preço font-2-m">
+                                <p>R$ 2499</p>
+                            </div>
+                        </div>
+                        <div class="escolha-container-interativo">
+                            <div class="interativo-icones font-1-xs color-9">
+                                 <img width="16" height="16" src="./img/icones/eletrica.svg" alt="">
+                                 <p>Motor Elétrico</p>
+                                 <img width="16" height="16" src="./img/icones/carbono.svg" alt="">
+                                 <p>Fibra de Carbono</p>
+                                 <img width="16" height="16" src="./img/icones/velocidade.svg" alt="">
+                                 <p>40 Km/h</p>
+                                 <img width="16" height="16" src="./img/icones/rastreador.svg" alt="">
+                                 <p>Rastreador</p>
                             </div>
                             <div>
-                                <p>Preço</p>
+                                <img width="140" height="88" src="./img/bicicletas/nimbus.jpg" alt="">
                             </div>
                         </div>
-                        <div class="nimbus-orç">
-                              <div class="nimbus-orç-inner">
-                                <div class="orç-row">
-                                    <img width="16" height="16"  src="./img/icones/carbono.svg" alt="">
-                                    <p class="font-1-xs color-8">Motor Elétrico</p>
-                                </div>
-                                <div class="orç-row">
-                                    <img width="16" height="16"  src="./img/icones/carbono.svg" alt="">
-                                    <p class="font-1-xs color-8">Fibra de Carbono</p>
-                                </div>
-                                <div class="orç-row">
-                                    <img width="16" height="16"  src="./img/icones/carbono.svg" alt="">
-                                    <p class="font-1-xs color-8">40 KM/H</p>
-                                </div>
-                                <div class="orç-row">
-                                    <img width="16" height="16"  src="./img/icones/carbono.svg" alt="">
-                                    <p class="font-1-xs color-8">Rastreador</p>
-                                </div>
-                              </div>
-                              <div>
-                                <img width="140" height="88" src="./img/bicicletas/nimbus.jpg" alt="">
-                              </div>
+                      </div>
+                      <!--CONTAINERS PRIMEIRA FIM-->
+    
+                      <div class="escolha-container">
+
+                        <div class="escolha-nome-preço">
+                            <div class="escolha-input">
+                                <input type="radio" name="choice-bike" id="nebula">
+                                <label for="nebula" class="font-2-m">Nebula Cosmic</label>
+                            </div>
+                            <div class="escolha-preço font-2-m">
+                                <p>R$ 3499</p>
+                            </div>
                         </div>
-                    </div> 
-                    <div class="orç-inputs">
-                        <input type="radio" name="bike-select" id="bike-select">
-                        <label for="nome">Magic Night</label>
-                    </div> 
-                    <div class="orç-inputs">
-                        <input type="radio" name="bike-select" id="bike-select">
-                        <label for="nome">Nebula Cosmic</label>
-                    </div> 
-                </div>  
+                        <div class="escolha-container-interativo">
+                            <div class="interativo-icones font-1-xs color-9">
+                                 <img width="16" height="16" src="./img/icones/eletrica.svg" alt="">
+                                 <p>Motor Elétrico</p>
+                                 <img width="16" height="16" src="./img/icones/carbono.svg" alt="">
+                                 <p>Fibra de Carbono</p>
+                                 <img width="16" height="16" src="./img/icones/velocidade.svg" alt="">
+                                 <p>40 Km/h</p>
+                                 <img width="16" height="16" src="./img/icones/rastreador.svg" alt="">
+                                 <p>Rastreador</p>
+                            </div>
+                            <div>
+                                <img width="140" height="88" src="./img/bicicletas/nimbus.jpg" alt="">
+                            </div>
+                        </div>
+                      </div>
+                      <!--CONTAINERS SEGUNDA FIM-->
+                      
+                      <div class="escolha-container">
+
+                        <div class="escolha-nome-preço">
+                            <div class="escolha-input">
+                                <input type="radio" name="choice-bike" id="magic">
+                                <label for="magic" class="font-2-m">Magic Might</label>
+                            </div>
+                            <div class="escolha-preço font-2-m">
+                                <p>R$ 3999</p>
+                            </div>
+                        </div>
+                        <div class="escolha-container-interativo">
+                            <div class="interativo-icones font-1-xs color-9">
+                                 <img width="16" height="16" src="./img/icones/eletrica.svg" alt="">
+                                 <p>Motor Elétrico</p>
+                                 <img width="16" height="16" src="./img/icones/carbono.svg" alt="">
+                                 <p>Fibra de Carbono</p>
+                                 <img width="16" height="16" src="./img/icones/velocidade.svg" alt="">
+                                 <p>40 Km/h</p>
+                                 <img width="16" height="16" src="./img/icones/rastreador.svg" alt="">
+                                 <p>Rastreador</p>
+                            </div>
+                            <div>
+                                <img width="140" height="88" src="./img/bicicletas/nimbus.jpg" alt="">
+                            </div>
+                        </div>
+                      </div>
+                      <!--CONTAINERS TERCEIRA FIM-->
+                      
                 </div>
-                 
+            </div>
                 <!--FORM-->
                 <div class="contact-form font-2-m"> 
                     <p class="little-text-form font-1-xs color-9">Dados pessoais</p>
@@ -228,6 +310,6 @@
         </div>
         <p class="footer-copy container font-1-m color-5">Bikcraft © Alguns direitos reservados.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="script-orçamento.js"></script>
 </body>
 </html>
