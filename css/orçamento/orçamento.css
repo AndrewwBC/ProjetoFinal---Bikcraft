@@ -144,3 +144,21 @@
 .display-block{
     display: block !important;
 }
+
+@media(max-width:600px){
+    .escolha-container{
+        max-width: 300px;
+    }
+}
+
+
+@media(max-width:500px){
+    .escolha-container{
+        width: 200px;
+        padding: 0;
+    }
+
+    .escolha-container label, p{
+        font-size: 10px;
+    }
+}
