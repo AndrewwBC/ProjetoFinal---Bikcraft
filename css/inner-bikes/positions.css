@@ -239,6 +239,19 @@
 
 }
 
+@media(max-width:500px){
+    
+   .article-gallery {
+     overflow: auto;
+     flex-wrap: nowrap;
+     height: auto;
+   }
+
+   .article-gallery img {
+    max-height: 100%;
+  }
+}
+
 
 @media(max-width:400px){
     .inner-gallery{
