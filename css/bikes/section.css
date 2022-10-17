@@ -103,7 +103,7 @@
 }
 .bikes-btn::after{
     content: "";
-    background-image: url("../img/icones/seta.svg");
+    background-image: url(".../img/icones/seta.svg");
     position: absolute;
     width: 18px;
     height: 10px;

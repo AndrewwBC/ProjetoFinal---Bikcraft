@@ -183,6 +183,9 @@
         margin-bottom: 0px;
         font-size: 48px;
     }
+    .inner-insurance-bg{
+        box-shadow: inset 0px -40px 0px 0px black, inset 0px 40px 0px 0px white;
+    }
 
     .inner-insurance-text p{
         margin-bottom: 0px;
@@ -190,17 +193,16 @@
     }
 
     .inner-insurance-text a{
-        padding: 16px 24px;
+        margin-top: 24px;
+        padding: 12px 24px;
+        font-size: 20px;
     }
 }
 
-
 @media(max-width:1100px){
-    
     .inner-insurance-bg{
-        box-shadow: inset 0px -60px 0px 0px black, inset 0px 40px 0px 0px white;
+        box-shadow: inset 0px -20px 0px 0px black, inset 0px 40px 0px 0px white;
     }
-
     .inner-insurance-text h1{
         margin-bottom: 0px;
         font-size: 32px;
@@ -226,6 +228,11 @@
         margin-bottom: 0px;
         font-size: 24px;
     }
+    .inner-insurance-text a{
+        margin-top: 12px;
+        padding: 12px 16px;
+        font-size: 16px;
+    }
     .inner-insurance-grid{
         background-color: var(--color-11);
         padding: 12px;
@@ -250,6 +257,10 @@
    .article-gallery img {
     max-height: 100%;
   }
+
+  .inner-bikes-info{
+    margin-top: 32px;
+  }
 }
 
 
@@ -264,6 +275,11 @@
 
     .inner-insurance-text p{
         font-size: 18px;
+    }
+
+    .inner-bikes-button-flex a{
+        padding: 8px 16px;
+        font-size: 12px;
     }
    
 }

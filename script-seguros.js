@@ -1,14 +1,22 @@
 const seguro = document.getElementById('Seguros');
-
-if(window.location.href === 'http://127.0.0.1:5500/seguros.html') {
-    seguro.classList.add('bordaAtiva');
-} 
-
 const container = document.getElementsByClassName('container-perguntas');
-const perguntas = document.getElementsByClassName('container-content');
-const button = document.getElementById('questions-2-btn');
+perguntas = document.getElementsByClassName('container-content');
+button = document.getElementById('questions-2-btn');
 
-for(let i=0; i<=container.length; i++){
+if (window.location.href === 'http://127.0.0.1:5500/seguros.html') {
+  seguro.classList.add('bordaAtiva');
+}
+
+// Usando jQuery
+$(container).click(function () {
+  $(this).each(function () {
+    $(this).find(perguntas).toggleClass('d-none');
+  });
+});
+
+// Código Micha
+
+/*for(let i=0; i<=container.length; i++){
     
     container[i].addEventListener('click', () => {
     
@@ -30,4 +38,4 @@ for(let i=0; i<=container.length; i++){
     }
 
     });
-}
+} */
